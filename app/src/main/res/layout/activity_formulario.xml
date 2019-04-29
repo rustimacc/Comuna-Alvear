@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Formulario"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edt_idmedidor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de Medidor"
+        android:paddingTop="30dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+
+            android:id="@+id/btn_leercodigo"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="205dp"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boton_redondo"
+            android:onClick="obtenercodigo"
+            android:text="KeyCode" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edt_consumo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Consumo"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/spn_novedades"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+    </Spinner>
+
+    <EditText
+        android:id="@+id/edt_observaciones"
+        android:layout_width="match_parent"
+        android:hint="Observaciones"
+        android:layout_height="80dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_enviar"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/boton_redondo"
+            android:onClick="save"
+            android:text="Enviar" />
+    </RelativeLayout>
+
+
+</LinearLayout>
